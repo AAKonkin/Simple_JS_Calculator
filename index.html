@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple JS Calculator</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+<body>
+    <div class="container">
+        <p class="title">Web Calculator Pet Project</p>
+        <div class="flex-container">
+            <input class="field" type="text" disabled value="0">
+            <input type="button" class="btn" value="&larr;" onclick="actionDo('delete')">
+            <input type="button" class="btn" value="CE" onclick="actionDo('CE')">
+            <input type="button" class="btn" value="C" onclick="actionDo('C')">
+            <input type="button" class="btn" value="&plusmn;" onclick="actionDo('plusminus')">
+
+            <input type="button" class="btn" value="9" onclick="insertNum(9)">
+            <input type="button" class="btn" value="8" onclick="insertNum(8)">
+            <input type="button" class="btn" value="7" onclick="insertNum(7)">
+            <input type="button" class="btn" value="&divide;" onclick="setAct('devide')">
+
+            <input type="button" class="btn" value="6" onclick="insertNum(6)">
+            <input type="button" class="btn" value="5" onclick="insertNum(5)">
+            <input type="button" class="btn" value="4" onclick="insertNum(4)">
+            <input type="button" class="btn" value="&bull;" onclick="setAct('multiple')">
+
+            <input type="button" class="btn" value="3" onclick="insertNum(3)">
+            <input type="button" class="btn" value="2" onclick="insertNum(2)">
+            <input type="button" class="btn" value="1" onclick="insertNum(1)">
+            <input type="button" class="btn" value="+" onclick="setAct('plus')">
+
+            <input type="button" class="btn zero" value="0" onclick="insertNum(0)">
+            <input type="button" class="btn" value="=" onclick="rEsult()">
+            <input type="button" class="btn" value="-" onclick="setAct('minus')">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
